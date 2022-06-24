@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8"> <!-- pour les caractères spéciaux -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- IE/Edge -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"> <!-- Toujours adapter à la largeur de l'appareil, mise à l'échelle -->
+    <meta name="referrer" content="origin-when-cross-origin"> <!-- Autorise l'interrogation asynchrone uniquement sur lui même -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Bibliothèque obligatoire pour Apple -->
+    <meta name="msapplication-tap-highlight" content="no" /> <!-- Désactive le taplight pour les mobiles -->
+    <meta name="description" content="Kiabi"> <!-- Description sur google -->
+    <title>Page principale Kiabi</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <p class="orange bold">Thème sombre</p>
+        </div>
+        
+        <div>
+            <div id="search" class="orange bold">
+                <div id="logo"><a href="#">
+                    <img src="media/images/logo.png" alt="logo-kiabi">
+                </a></div>
+                <input type="search"  id="search-bar" name="search" placeholder="Rechercher un article...">
+                <p id="profil">profil</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="menu-top">
+                <li><a href="#">Femme</a></li>
+                <li><a href="#">Maternité</a></li>
+                <li><a href="#">Homme</a></li>
+                <li><a href="#">Enfants</a></li>
+                <li><a href="#">Bébés</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="https://www.kiabi.com/">Kiabi.com</a></li>
+            </ul>
+        </nav>
+        <div class="button-top">
+            <button id="discovery" class="bold green">Je découvre le service</button>
+        </div>
+    </header>
+
+<main>
+    <div class="center first">
+        
+        <div class="img-card green radius fav">
+            <img src="media/images/pantalon2.png">
+        </div>
+       
+        <div class="img-card orange radius fav">
+            <img src="media/images/pantalon2.png">
+        </div>
+       
+        <div class="img-card green radius fav">
+            <img src="media/images/pantalon2.png">
+        </div>
+       
+        <div class="img-card orange radius fav">
+            <img src="media/images/pantalon2.png">
+        </div>
+      
+        <div class="img-card green radius fav">
+            <img src="media/images/pantalon2.png">
+        </div>
+      
+    </div>
+    
+    <div>
+        <div class="center">
+            <h3 class="green">Articles Récents</h3>
+            <div class="img-card orange">
+                <img src="media/images/pantalon2.png">
+            </div>
+            <div class="img-card green">
+                <img src="media/images/pantalon2.png">
+            </div>
+            <div class="img-card orange">
+                <img src="media/images/pantalon2.png">
+            </div>
+            <div class="img-card green">
+                <img src="media/images/pantalon2.png">
+            </div>
+            <div class="img-card orange">
+                <img src="media/images/pantalon2.png">
+            </div>
+        </div>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li id="home" class="bg-contain"><a href="#"></a></li>
+            <li id="search-img" class="bg-contain"><a href="#"></a></li>
+            <li id="plus" class="bg-contain"><a href="#"></a></li>
+            <li id="message" class="bg-contain"><a href="#"></a></li>
+            <li id="profil-bottom" class="bg-contain"><a href="#"></a></li>
+        </ul>
+    </nav>
+</main>
+
+<script>
+
+const body = document.querySelector("body");
+let button = document.querySelector(".switch input");
+
+button.addEventListener("change", function() {
+
+    if(this.checked) {
+        body.classList.add("dark")
+    }
+    else {
+        body.classList.remove("dark")
+    }
+})
+
+</script>
+</body>
+</html>
