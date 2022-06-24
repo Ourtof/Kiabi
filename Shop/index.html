@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8"> <!-- pour les caractères spéciaux -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- IE/Edge -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"> <!-- Toujours adapter à la largeur de l'appareil, mise à l'échelle -->
+    <meta name="referrer" content="origin-when-cross-origin"> <!-- Autorise l'interrogation asynchrone uniquement sur lui même -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Bibliothèque obligatoire pour Apple -->
+    <meta name="msapplication-tap-highlight" content="no" /> <!-- Désactive le taplight pour les mobiles -->
+    <meta name="description" content="Kiabi"> <!-- Description sur google -->
+    <title>Page principale Kiabi</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <p class="orange bold">Thème sombre</p>
+        </div>
+        
+        <div>
+            <div id="search" class="orange bold">
+                <div id="logo"><a href="#">
+                    <img src="media/image/logo.png" alt="logo seconde main">
+                </a></div>
+                <input type="search"  id="search-bar" class="green" name="search" placeholder="Rechercher un article...">
+                <p id="profil">profil</p>
+            </div>
+            <button id="shopbtn" class="green">
+                <p class="green bold">Shop</p>
+            </button>
+        </div>
+
+        <nav>
+            <ul class="menu-top">
+                <li><a href="#">Femme</a></li>
+                <li><a href="#">Maternité</a></li>
+                <li><a href="#">Homme</a></li>
+                <li><a href="#">Enfants</a></li>
+                <li><a href="#">Bébés</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="https://www.kiabi.com/">Kiabi.com</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <div id="ctmain">
+                <div id="ctshop">  <!--début shop-->
+                                                <!--case du chop + image  + info-->
+                    <div class="orange">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                         </div>
+                        <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                        </div>
+                     <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div>
+                    <div class="orange">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                         </div>
+                        <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                        </div>
+                     <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div> 
+                    <div class="orange">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                         </div>
+                        <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                        </div>
+                     <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div>
+                    <div class="orange">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                         </div>
+                        <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="shopimage">
+                            <img src="media/image/Ticket.png">
+                        </div>
+                     <div class="shopinfo orange">
+                            <p class="orange bold">Tiket : 500 pièces</p>
+                        </div>
+                    </div>  
+                </div>
+                <div id="ctpanier">
+                    <div id="monpanier" class="orange">
+                        <h3>Mon panier <img src="media/image/panier.png" alt="panier"></h3>
+                        <ul id="panier" class="orange">
+                            <li>
+                                <div>
+                                    <img src="media/image/Ticket.png" alt="ticket">
+                                </div>
+                                <span class="quantite">
+                                    x2
+                                </span>
+                                <span class="intitule green">
+                                    Frais d'expédition offert.
+                                </span>
+                            </li>
+                        </ul>
+                        <p class="green">
+                            Total à payer: 1000 pièces.
+                            <span id="paybtn" class="bold">
+                                    Payer                               
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>  <!--fin shop-->
+
+            <nav id="menu">
+                <ul>
+                    <li id="home" class="bg-contain"><a href="#"></a></li>
+                    <li id="search-img" class="bg-contain"><a href="#"></a></li>
+                    <li id="plus" class="bg-contain"><a href="#"></a></li>
+                    <li id="message" class="bg-contain"><a href="#"></a></li>
+                    <li id="profil-bottom" class="bg-contain"><a href="#"></a></li>
+                </ul>
+            </nav>
+        </main>
+
+        <script>
+            const body = document.querySelector("body");
+            let button = document.querySelector(".switch input");
+
+            button.addEventListener("change", function() {
+
+                if(this.checked){
+                    body.classList.add("dark")
+                }
+                
+                else{
+                    body.classList.remove("dark")
+                }
+            })
+        </script>
+    </body>
+
+</html>

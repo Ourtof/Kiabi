@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monserrat', Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+/*--------------DEBUT SWITCH---------------*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 28px;
+    margin: 10px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/*--------------FIN SWITCH---------------*/
+
+/*--------------START DARK---------------*/
+
+.dark {
+  background-color: rgb(123, 113, 113);
+}
+
+.dark main, .dark #settings, .dark #menu, .dark .vetement, .dark #search {
+  background-color: rgb(123, 113, 113);
+}
+
+.dark p {
+    color: white;
+}
+
+.dark #profil:hover {
+  color: rgb(255, 162, 0);
+} 
+
+.dark #home {
+  background-image: url(../media/images/home2.png);
+}
+
+.dark #search-img {
+  background-image: url(../media/images/search2.png);
+}
+
+.dark #plus {
+  background-image: url(../media/images/plus2.png);
+}
+
+.dark #message {
+  background-image: url(../media/images/message2.png);
+}
+
+.dark #profil-bottom {
+  background-image: url(../media/images/profil2.png);
+}
+
+/*--------------END DARK---------------*/
+
+/*--------------UTILITAIRES---------------*/
+
+.orange {
+    color: rgb(255, 162, 0)!important;
+}
+
+.green {
+    color: rgb(0, 102, 88)!important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.radius {
+  border-radius: 50px;
+}
+
+/*--------------START HEADER---------------*/
+
+#top-bar {
+  height: 4vh;
+  background-color: rgb(0, 102, 88);
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+}
+
+#search {                                                       /*div pour le logo, barre de recherche et bouton*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#logo {
+  margin: 30px 50px;
+  width: 250px;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+}
+
+#search-bar {                                                   /* barre de rerche*/
+  margin: 30px;
+  height: 50px;
+  line-height: 50px;
+  width: 40%;
+  border: solid 1px  rgb(0, 102, 88); 
+  border-radius: 30px;
+}
+
+input::placeholder {
+  padding: 10px;
+}
+
+#profil {                                                       /*bouton à droite profil*/
+  margin: 30px;
+  height: 50px;
+  line-height: 50px;
+  width: 11%;
+  border: solid 1px  rgb(0, 102, 88); 
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+#profil:hover {
+  color:rgb(0, 102, 88);
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu-top {                                                               /*Liste*/
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.menu-top li {
+  padding: 15px 50px;
+  border: solid 1px rgb(255, 162, 0);
+  background-color: rgb(0, 102, 88);
+  text-align: center;
+  flex: 1;
+  list-style: none;
+}
+
+.menu-top li a:hover {
+  color:rgb(255, 162, 0);
+}
+
+li:last-of-type {
+  border-right: none;
+}
+
+/*--------------END HEADER---------------*/
+
+/*--------------START MAIN---------------*/
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  padding: 0 5vw;
+  background-color: gainsboro;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+}
+
+#zone-profil {
+  width: 20vw;
+}
+
+#settings {
+  border: solid 3px rgb(0, 102, 88);
+  background-color: white;
+}
+
+#info {
+  border: solid 3px rgb(255, 162, 0);
+  padding: 10px;
+  margin: 6%;
+  text-align: center;
+}
+
+#info p {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+hr {
+  width: 85%;
+  margin: 0 auto;
+  color: grey;
+}
+
+#settings ul li {
+  margin: 13% 0;
+}
+
+#settings ul li a, #settings ul li p{
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 1.3em;
+}
+
+#settings ul {
+  padding: 0 30px;
+  list-style: none;
+}
+
+#settings ul li:not(:first-of-type) span {
+  font-size: 2em;
+}
+
+#zone-dressing {
+  width: 60vw;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.vetement {
+  width: 25%;
+  height: 35vh;
+  border: solid 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.vetement img {
+  width: 60%;
+}
+
+#sell {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#sell p {
+  font-size: 1.5em;
+}
+
+button {
+  background-color: rgb(255, 162, 0);
+  border: solid 4px rgb(0, 102, 88);
+  padding: 20px 60px;
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .2s ease;
+  color:rgb(0, 102, 88);
+}
+
+button:hover {
+  color: rgb(255, 162, 0);
+  border-color:rgb(255, 162, 0);
+  background-color: rgb(0, 102, 88);
+}
+
+@media screen and (min-width: 861px) {
+  #menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 861px) and (max-width: 1400px) {
+
+  #info {
+    padding: 5px;
+  }
+
+  #logo {
+    margin: 30px auto;
+    width: 150px;
+    }
+
+}
+
+
+
+@media screen and (max-width:860px) {
+    
+  main {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #search {
+      margin: 20px;
+  }
+
+  #search-bar {
+      display: none;
+  }
+
+  #profil {
+      display: none;
+  }
+
+  #logo {
+      margin: 0 auto;
+      width: 80%;
+  }
+
+  .menu-top {
+    display: none;
+  }
+
+  #zone-profil {
+    width: 80vw;
+  }
+
+  #zone-dressing {
+    width: 95%;
+    margin: auto;
+  }
+
+  #zone-dressing h2 {
+    position: relative;
+    margin: 30px auto;
+  }
+
+  #zone-dressing h2::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 162, 0);
+    position: absolute;
+    top: -10px;
+    left: -0vw;
+  
+  }
+
+  .vetement {
+    width: 45%;
+  }
+
+  #cards {
+    width: 100%;
+    gap: 20px;
+  }
+
+  #sell {
+    width: 100%;
+  }
+
+  #menu {
+    width: 100%;
+    height: 70px;
+    border: solid 1px rgb(0, 102, 88);
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+  }
+    
+
+  #home {
+      background-image: url(../media/images/home.png);
+  }
+
+  #search-img {
+      background-image: url(../media/images/search.png);
+  }
+
+  #plus {
+      background-image: url(../media/images/plus.png);
+  }
+
+  #message {
+      background-image: url(../media/images/message.png);
+  }
+
+  #profil-bottom {
+      background-image: url(../media/images/profil.png);
+  }
+
+  #menu li {
+      width: 15%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  #menu ul {
+      justify-content: space-evenly;
+      list-style: none;
+      height: 100%;
+      display: flex;
+  }
+
+}
